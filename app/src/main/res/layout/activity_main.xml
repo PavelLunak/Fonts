@@ -84,6 +84,16 @@
 
             </com.lupa.customfont.MyTextView>
 
+            <com.lupa.customfont.MyTextView
+                android:id="@+id/mTv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Můj vlastní TextView s vlastním fontem."
+                app:myFont="DISTInking-Regular.otf">
+
+            </com.lupa.customfont.MyTextView>
+
         </LinearLayout>
 
     </ScrollView>
