@@ -24,7 +24,11 @@ public class MainActivity extends AppCompatActivity {
         Typeface typeface;
 
         if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.O){
-            typeface = ResourcesCompat.getFont(this, R.font.font_02);
+            //Nový způsob nastavení fontu pomocí Support Library
+            //typeface = ResourcesCompat.getFont(this, R.font.font_02);
+
+            //Starý způsob nastavení fontu
+            typeface = Typeface.createFromAsset(getAssets(), "fonts/Flatform_Light.otf");
         } else{
             typeface = getResources().getFont(R.font.font_02);
         }
